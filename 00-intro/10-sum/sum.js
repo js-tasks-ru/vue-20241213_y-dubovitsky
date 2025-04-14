@@ -6,5 +6,11 @@
  * @return {number} сумма чисел a и b
  */
 export function sum(a, b) {
-  // Решение
+  // Проверка, что оба аргумента являются числами
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Оба аргумента должны быть числами');
+  }
+  
+  return a + b;
 }
+
